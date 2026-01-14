@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="carrinho de compras" id="logo">
+    </header>
+    <main id="main-form">
+        <div> <!-- div com form de dados pessoais -->  
+            <h2 class="title">Dados pessoais</h2>
+            <form method="get" autoComplete="on">
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Nome completo"/>
+                </div>
+                <div class="form-dados">
+                    <input type="text" name="email" id="email" placeholder="Email"/>
+                    <input type="number" name="phone" id="phone" placeholder="Telefone"/>
+                </div>
+            </form>
+        </div>
+        <div class="container-form"> <!-- div com form de dados de endereço -->
+            <h2 class="title">Dados de endereço</h2>
+            <form method="get" autoComplete="on">
+                <div> <!-- div com input de CEP -->
+                    <input type="text" inputMode="numeric" pattern="[0-9]{5}-?[0-9]{3}" id="cep" placeholder="CEP"/>
+                    <p class="texto-cep"><a href="https://buscacepinter.correios.com.br/" target="blank">Não sei meu CEP</a></p>
+                </div>
+                <div class="cep"> 
+                    <input type="text" name="address" id="address" placeholder="Rua/Avenida"/>
+                    <input type="number" name="number" id="number" placeholder="Número"/>
+                    <input type="text" name="complement" id="complement" placeholder="Complemento"/>
+                </div>
+                <div class="form-dados">
+                    <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro"/>
+                    <input type="text" name="city" id="city" placeholder="Cidade"/>
+                    <input type="text" name="state" id="state" placeholder="Estado"/>
+                </div>
+            </form>
+        </div>
+        <div class="button container-form">
+            <button type="submit" id="submit-btn">Enviar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

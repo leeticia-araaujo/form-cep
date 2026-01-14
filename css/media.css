@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) { /*para celulares*/
+    #logo{
+        width: 50px;
+    }
+
+    #main-form{
+        max-width: 80%;
+    }
+
+    #title{
+        font-size: 1.5rem;
+    }
+
+    input{
+        height: 2.5rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) { /*para tablets*/
+    #logo{
+        width: 55px;
+    }
+
+    #main-form{
+        max-width: 80%;
+    }
+
+    #title{
+        font-size: 1.7rem;
+    }
+
+    input{
+        height: 2.7rem;
+        font-size: 15px;
+    }
+}
