@@ -46,9 +46,9 @@ btn.addEventListener('click', (event) => {
         alert('Por favor, preencha todos os campos antes de enviar o formulário.');
     } else{
         alert('Formulário enviado com sucesso!');
-    }
-
-    inputs.forEach((input) => {
+        
+        inputs.forEach((input) => {
         input.value = "";
-    });
+        });
+    }
 });
