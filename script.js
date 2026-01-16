@@ -25,6 +25,8 @@ async function searchCep(){
             document.getElementById('city').value = address.localidade;
             document.getElementById('state').value = address.uf;
         }
+    } else if(cep.value.length === 0){
+        return;
     } else{
         alert('CEP inválido!');
     }
@@ -46,7 +48,7 @@ btn.addEventListener('click', (event) => {
         alert('Por favor, preencha todos os campos antes de enviar o formulário.');
     } else{
         alert('Formulário enviado com sucesso!');
-        
+
         inputs.forEach((input) => {
         input.value = "";
         });
